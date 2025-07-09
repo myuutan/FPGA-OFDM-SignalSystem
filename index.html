@@ -294,36 +294,91 @@
 
         <nav>
             <div class="nav-menu">
-                <button class="nav-btn" onclick="showPage('home')">Home</button>
-                <button class="nav-btn" onclick="showPage('about')">profile</button>
-                <button class="nav-btn" onclick="showPage('skills')">Skills</button>
-                <button class="nav-btn" onclick="showPage('diary')">Diary</button>
-                <button class="nav-btn" onclick="showPage('contact')">Inquiries</button>
+                <button class="nav-btn" onclick="showPage('Google AI studio prompt')">Google AI studio prompt</button>
+                <button class="nav-btn" onclick="showPage('Gemini 2.5 Flash prompt')">Gemini 2.5 Flash prompt</button>
+                <button class="nav-btn" onclick="showPage('Google AI studio evaluate')">Google AI studio evaluate</button>
+                <button class="nav-btn" onclick="showPage('Gemini 2.5 Flash evaluate')">Gemini 2.5 Flash evaluate</button>
+                <button class="nav-btn" onclick="showPage('English translation thesis')">English translation thesis</button>
             </div>
         </nav>
 
         <main class="content">
             <!-- Home Page -->
-            <div id="home" class="page active fade-in">
+            <div id="Google AI studio prompt" class="page active fade-in">
                 <div class="section">
-                    <h2>Welcome to my personal website</h2>
-                    <p>私のWebサイトへようこそ!このサイトでは私の自己紹介やスキル、日記などを紹介しています。</p>
-                    <p>何かご質問があれば、お気軽にお問い合わせページからご連絡ください。</p>
+                    <h2>Google AI studio prompt</h2>
+                    <p>
+                        # 命令書 (Instruction)
+
+                        ## あなたの役割 (Role)
+                        あなたは、信号処理と通信工学を専門とする、経験豊富な学術翻訳者です。日本語の学術予稿集を、国際会議の論文として投稿できる品質の、自然で正確な英語に翻訳する能力を持っています。
+
+                        ## 目的 (Goal)
+                        提供された日本語の学術論文のテキストを、以下の制約条件に従って、高品質な学術英語に翻訳します。
+
+                        ## 制約条件 (Constraints)
+                        - **正確性:** 元の日本語の意図、ニュアンス、技術的な情報を一切省略・追加せず、忠実に翻訳してください。
+                        - **専門用語:** 信号処理、通信工学、鉄道システム分野で一般的に使用される標準的な英単語・表現を使用してください。
+                        - **文体:** 客観的でフォーマルな学術論文のトーンを維持してください。簡潔で明確な文章を心がけ、受動態と能動態を適切に使い分けてください。
+                        - **自然さ:** AIによる翻訳だと感じさせない、自然で流暢な英語表現を使用してください。
+                        - **一貫性:** 文書全体で用語や表現のスタイルを一貫させてください。
+
+                        ## 文脈情報 (Context)
+                        - **研究分野:** 通信工学、信号処理、FPGA実装
+                        - **キーワード:** OFDM, FPGA, railway signaling system, track circuit, bit error rate (BER), FFT, IFFT, rail noise
+                        - **ターゲット読者:** 通信工学、鉄道技術の研究者、大学院生
+
+                        ## 用語集 (Glossary)
+                        - 軌道回路: track circuit
+                        - 鉄道雑音: rail noise
+                        - 商用周波数: commercial power frequency
+                        - 高調波: harmonics
+                        - ビット誤り率: Bit Error Rate (BER)
+                        - 多数決判定: majority decision
+                        - プログラマブルなデバイス: programmable device
+
+                        ---
+
+                        ## 日本語原文 (Source Text)
+                        [ここに論文の各セクションのテキストを貼り付け]
+
+                        ---
+
+                        ## 出力形式 (Output Format)
+                        翻訳された英語のテキストのみを、適切な見出しをつけて出力してください。解説や前置きは不要です。
+                    </p>
                 </div>
             </div>
 
             <!-- About Page -->
-            <div id="about" class="page">
+            <div id="Gemini 2.5 Flash prompt" class="page">
                 <div class="section">
                     <h2>Profile</h2>
-                    <p>名前：野澤　未羽　(Nozawa Miu)</p>
-                    <p>趣味：アニメを見ること、ドラム、ショッピング</p>
-                    <p>このWebサイトは学習の一環として作成しました。まだまだ初心者ですが、少しずつスキルアップしていきたいと思っています。</p>
+                    <p>
+                       
+                        あなたはプロの学術翻訳家です。
+
+                        以下の日本語の論文を、自然で高品質な英語に翻訳してください。翻訳は学術論文にふさわしい専門用語と表現を使用し、原文の意味を正確に、かつ文化的に適切に伝えるようにしてください。
+
+                        指示:
+
+                        文体とトーン: 学術論文に典型的な、客観的でフォーマルな文体を維持してください。
+
+                        専門用語: 指定がない限り、各分野で一般的に使用される専門用語を使用してください。もし特定の専門用語の訳語に指定がある場合は、後述の「専門用語リスト」に従ってください。
+
+                        図表のキャプション: 図表のキャプションは、元の意味を保持しつつ、簡潔で分かりやすい英語にしてください。
+
+                        参考文献: 参考文献リストは、もし原文で英語表記と日本語表記が混在している場合でも、可能な限り元の表記を維持してください。ただし、必要に応じて学術的な慣例に沿って調整してください。
+
+                        数式: 数式は原文のまま保持してください。
+
+                        文化的なニュアンス: 日本語特有の表現や文化的ニュアンスは、英語圏の読者にも理解できるよう、適切に言い換えまたは補足説明を加えてください。
+                    </p>
                 </div>
             </div>
 
             <!-- Skills Page -->
-            <div id="skills" class="page">
+            <div id="Google AI studio evaluate" class="page">
                 <div class="section">
                     <h2>Skills</h2>
                     <p>現在学習中・習得中のスキルをご紹介します。</p>
@@ -349,7 +404,7 @@
             </div>
 
             <!-- Diary Page -->
-            <div id="diary" class="page">
+            <div id="Gemini 2.5 Flash evaluate" class="page">
                 <div class="section">
                     <h2>Diary</h2>
                     <p></p>
@@ -378,7 +433,7 @@
             </div>
 
             <!-- Contact Page -->
-            <div id="contact" class="page">
+            <div id="English translation thesist " class="page">
                 <div class="section">
                     <h2>Inquiries</h2>
                     <p>ご質問やご意見がございましたら、お気軽にお声がけください。</p>
