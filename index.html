@@ -538,7 +538,30 @@
 </div>
 
 <script>
-  function toggleTranslation(type) {
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            const selectedPage = document.getElementById(pageId);
+            selectedPage.classList.add('active');
+            selectedPage.classList.add('fade-in');
+            
+            // Remove animation class after animation completes
+            setTimeout(() => {
+                selectedPage.classList.remove('fade-in');
+            }, 500);
+        }
+
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            showPage('home');
+        });
+        function toggleTranslation(type) {
     const google = document.getElementById('google-translation');
     const gemini = document.getElementById('gemini-translation');
     if (type === 'google') {
@@ -549,7 +572,8 @@
       gemini.style.display = 'block';
     }
   }
-</script>
+    </script>
+</body>
 
 </body>
 </html>
